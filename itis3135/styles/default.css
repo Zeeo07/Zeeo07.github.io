@@ -1,0 +1,152 @@
+/* Reset some default styles */
+body, h1, p, nav, footer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  background-color: #2b2b2b;
+  text-align: center;
+  color: #ff69b4;
+  display: block;
+  margin: 8px;
+  font-family: 'Cinzel Decorative', sans-serif;
+  font-size: 18px;
+}
+
+main {
+  margin: 50px;
+}
+
+/* Navigation link styles */
+nav > a,
+.nav1 > a,
+.nav2 > a {
+  color: #bdbdbd;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 5px;
+  transition: color 0.3s ease;
+}
+
+nav > a:hover,
+.nav1 > a:hover,
+.nav2 > a:hover {
+  color: #ff69b4;
+  text-decoration: underline;
+}
+
+/* Nested List Styles */
+ul {
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+/* Header styles */
+h1, h2, h3 {
+  color: #ff69b4;
+  text-align: center;
+  font-family: 'Cinzel Decorative';
+  margin-bottom: 20px;
+}
+
+/* Paragraph styles */
+p {
+  font-family: 'sans-serif', 'Cinzel Decorative';
+  line-height: 1.6;
+}
+
+/* Styles for the image */
+figure img {
+  max-width: 50%;
+  height: auto;
+}
+/* Center the ordered list */
+ol {
+  list-style: none;
+  counter-reset: item;
+  padding: 0;
+  text-align: center; /* Center the list items */
+  margin: 0 auto; /* Center the list container */
+  max-width: 600px; /* Adjust the maximum width as needed */
+}
+
+/* Add styles for each list item */
+ol li {
+  counter-increment: item;
+  margin-bottom: 10px;
+  position: relative;
+  text-align: left; /* Align the text to the left within each list item */
+}
+
+/* Add a pseudo-element for the numbering */
+ol li::before {
+  content: counter(item);
+  color: #ff69b4;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Add styles for the list items */
+ol li {
+  color: #bdbdbd;
+}
+
+
+
+
+/* Table styles */
+table {
+  border-style: solid;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+table th,
+table td {
+  padding: 15px; /* Increased padding for better visual separation */
+  border-right: 2px solid black;
+}
+
+/* Simple table styles */
+table.simple-table {
+  margin-top: 20px;
+  background-color: #3a3a3a; /* Darker background color for the simple table */
+}
+
+table.simple-table th,
+table.simple-table td {
+  background-color: #ff69b4;
+  color: white;
+}
+
+/* Complex table styles */
+table.complex-table {
+  border-color: #ff69b4;
+}
+
+table.complex-table th {
+  font-weight: bold;
+}
+
+table.complex-table td {
+  font-style: italic;
+}
+
+/* Footer styles */
+footer > a, footer #zonked-enterprises {
+  color: #bdbdbd;
+  margin-right: 10px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+footer > a:hover, footer #zonked-enterprises:hover {
+  color: #ff69b4;
+  border-bottom: 2px solid #ff69b4;
+}
+
